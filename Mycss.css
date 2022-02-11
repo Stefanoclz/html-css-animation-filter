@@ -1,0 +1,210 @@
+.ex-1-square {
+    transition: 5s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square:active {
+    transition: 5s;
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: 1s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: 2s;
+}
+
+.ex-4-square:hover {
+    background-color: transparent;
+}
+
+.ex-5-square {
+    transition: 1s;
+}
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.ex-5-square:active {
+    width: 40px;
+    height: 40px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover {
+    transition: 1s;
+    filter: sepia(50%);
+}
+
+.ex-8-img:hover {
+    transition: 1s;
+    filter: hue-rotate(150deg);
+    border-radius: 25px;
+}
+
+.ex-9-img:hover {
+    transition: 1s;
+    border-radius: 25px;
+    transform: scale(1.3);
+    filter: contrast(150%);
+}
+
+.ex-10-icon {
+    animation: antiorario linear infinite;
+    animation-duration: 1s;
+}
+
+@keyframes antiorario {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: orario linear;
+    animation-duration: 2s;
+}
+
+@keyframes orario {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: top12 linear;
+    animation-duration: 2s;
+}
+
+@keyframes top12 {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bot12 linear;
+    animation-duration: 2s;
+}
+
+@keyframes bot12 {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: giro-top linear;
+    animation-duration: 2s;
+}
+
+@keyframes giro-top {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    20% {
+        left: 100%;
+        top: -10px;
+    }
+
+    40% {
+        left: 100%;
+        top: 100%;
+    }
+
+    60% {
+        left: -10%;
+        top: 100%;
+    }
+
+    80% {
+        left: -10%;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: giro-bot linear;
+    animation-duration: 2s;
+}
+
+@keyframes giro-bot {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    20% {
+        right: 80%;
+        bottom: -10px;
+    }
+
+    40% {
+        right: 80%;
+        bottom: 63px;
+    }
+
+    60% {
+        right: -30%;
+        bottom: 63px;
+    }
+
+    80% {
+        right: -30%;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
